@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Kaushan+Script&family=Luxurious+Roman&family=Moon+Dance&family=Oswald&family=Tinos:ital@1&display=swap');
+
+/* font-family: 'Josefin Sans', sans-serif;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Luxurious Roman', cursive;
+font-family: 'Moon Dance', cursive;
+font-family: 'Oswald', sans-serif;
+font-family: 'Tinos', serif; */
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* --------------------------------------footer */
+footer{
+    background-color: rgb(10, 38, 90);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}

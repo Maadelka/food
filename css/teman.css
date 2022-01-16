@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color: rgb(67, 95, 253);
+}
+body::-webkit-scrollbar {
+    width: 6px;
+}
+body::-webkit-scrollbar-thumb {
+    background: blue; 
+    border-radius: 70px;
+}
+body::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+}
+
+
+
+
+/* ----------------------------------------------------------------------- */
+.list-add{
+    width: 100%;
+    display: flex;
+    /* background-color: #fff; */
+    border-bottom: 2px solid blue;
+}
+.list-add p{
+    background-color: blue;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+.list-add p:hover{
+    box-shadow: 1px 1px 2px black;
+    color: yellow;
+}
+.list{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+.add{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+/* ===============================filter */
+form{
+    width: 100%;
+    margin-top: 10px;
+    /* background-color: #fff; */
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 5px;
+    z-index: 99;
+}
+form label{
+    width: 20%;
+    font-size: 1.3rem;
+    background-color: #fff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(218, 231, 255);
+}
+
+form input{
+    width: 80%;
+    border-radius: 5px;
+    background-color: rgb(218, 231, 255);
+}
+
+
+
+
+
+.list-teman {
+    margin-top: 20px;
+}
+.list-teman li{
+    margin-bottom: 10px;
+    background-color: rgb(153, 194, 255);
+    cursor: pointer;
+}
+.list-teman li:hover{
+    background-color: rgb(103, 164, 255);
+}
+.list-teman li div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.list-teman div img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 5px;
+    padding: 5px;
+    transition: .20s;
+}
+
+.list-teman li:hover div img{
+    transform: scale(1.1);
+}

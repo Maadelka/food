@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* --------------------------------------aside */
+aside{
+    /* background-image: linear-gradient(to right, black, blue); */
+    background-color: rgb(88, 88, 255);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.menu{
+    width: 100%;
+    /* height: 45px; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(152, 140, 255);
+}
+
+.menu .ico{
+    width: 30px;
+    height: 30px;
+    transition: .20s;
+}
+.menu .ico:hover{
+    transform: scale(1.2);
+}
+.menu .ico img{
+    width: 100%;
+    height: 100%;
+}
+.menu .ico:hover img{
+    filter: drop-shadow(1px 1px 2px white);
+}

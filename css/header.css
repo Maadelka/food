@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* -----------------------------------------header */
+header{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, rgb(31, 29, 29), rgb(108, 108, 255));
+    padding: 10px;
+    box-sizing: border-box;
+}
+header h1{
+    width: 20%;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-family: 'Tinos', serif;
+    color: white;
+}
+header ul{
+    display: flex;
+    width: 55%;
+    justify-content: space-evenly;
+    /* background-color: azure; */
+}
+header ul a{
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-family: 'Luxurious Roman', cursive;
+}
+header ul li{
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+    padding: 2px;
+    transition: .30s;
+}
+header ul a:hover li{
+    box-shadow: 1px 1px 2px rgb(253, 253, 253);
+    color: yellow;
+}
+header form{
+    width: 25%;
+    font-size: 1.2rem;
+    display: flex;
+}
+
+header form label{
+    background-color: rgb(180, 180, 245);
+    border-radius: 5px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: .20s;
+    letter-spacing: 1px;
+}
+header form label:hover{
+    background-color: rgb(220, 220, 255);
+}
+header form label:hover ~ input{
+    background-color: rgb(220, 220, 255);
+}
+header form input{
+    height: 20px;
+    font-size: 1em;
+    padding: 2px;
+    border-radius: 5px ;
+    background-color: rgb(180, 180, 245);
+    transition: .20s;
+}

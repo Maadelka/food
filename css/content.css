@@ -1,0 +1,388 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-image: linear-gradient(to right, rgb(31, 29, 29), rgb(108, 108, 255));
+}
+body::-webkit-scrollbar {
+    width: 8px;
+}
+body::-webkit-scrollbar-thumb {
+    background: blue; 
+    border-radius: 70px;
+}
+body::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+}
+/* --------------------------------------main/content */
+main{
+    background-image: linear-gradient(to right, rgb(31, 29, 29), rgb(108, 108, 255));
+    
+}
+
+
+main .menu-makanan{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.493);
+}
+
+.menu-makanan ul{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+.menu-makanan ul a{
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    transition: .10s;
+    letter-spacing: 1px;
+}
+.menu-makanan ul li{
+    padding: 3px;
+    border-right: 2px solid rgb(53, 50, 50);
+    border-bottom: 2px solid rgb(53, 50, 50);
+    border-radius: 10px;
+    transition: .20s;
+}
+.menu-makanan ul a:hover{
+    color: yellow;
+}
+.menu-makanan ul a:hover li{
+    box-shadow: 1px 1px 2px rgb(255, 255, 255);
+}
+
+
+
+
+/* ------------------------------------------------------------hero */
+.hero{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    padding: 2px;
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    margin-top: 40px;
+}
+
+
+/* ===makanan */
+.hero .makanan{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(9, 39, 175); */
+    background-image: url(../img/makanan.jpg);
+    background-size: 100%;
+    overflow: hidden;
+    margin-right: 2px;
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+.hero .makanan:hover {
+    background-size: 103%;
+}
+
+.hero .makanan::before{
+    position: absolute;
+    display: none;
+    content: "Example";
+    font-size: 1.5rem;
+    color: cadetblue;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(to right, rgba(31, 29, 29, 0.226), rgba(0, 0, 255, 0.123));
+    transition: .60s;
+}
+.hero .makanan:hover::before{
+    display: block;
+}
+
+
+.hero .makanan h2{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.5rem;
+    transition: .20s;
+}
+
+
+.hero .makanan img:hover ~ h2{
+    color: chartreuse;
+}
+
+
+
+/* ===minuman */
+.hero .minuman{
+    width: 50%;
+    height: 100%;
+    background-image: url(../img/jugoslocos-QD4yCjlD44A-unsplash\ \(1\).jpg);
+    background-size: 100%;
+    overflow: hidden;
+    margin-right: 2px;
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+.hero .minuman:hover {
+    background-size: 103%;
+}
+
+.hero .minuman::before{
+    position: absolute;
+    display: none;
+    content: "Example";
+    font-size: 1.5rem;
+    color: cadetblue;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(to right, rgba(31, 29, 29, 0.226), rgba(0, 0, 255, 0.123));
+    transition: .60s;
+}
+.hero .minuman:hover::before{
+    display: block;
+}
+
+.hero .minuman h2{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------sub menu */
+.sub-m-m{
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+.sub-m-m h1{
+    color: rgb(255, 255, 255);
+}
+.sub-m-m ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.sub-m-m ul a{
+    color: rgb(0, 174, 255);
+}
+.sub-m-m ul li {
+    width: 200px;
+    height: 150px;
+    margin: 3px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.sub-m-m ul li::before{
+    position: absolute;
+    display: none;
+    content: "Masukkan kekeranjang";
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255);
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, rgba(31, 29, 29, 0.411), rgba(0, 0, 255, 0.123));
+    transition: .60s;
+}
+
+.sub-m-m ul a:hover li::before{
+    display: block;
+}
+
+
+.sub-m-m ul a:hover li{
+    background-size: 102%;
+    background-color: rgba(255, 250, 250, 0.63);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.sub-m-m ul a:nth-child(1) li{
+    background-image: url(../img-sub/ma1.jpg);
+    background-color: rgba(0, 0, 0, 0.288);
+    background-blend-mode:multiply;
+}
+.sub-m-m ul a:nth-child(2) li{
+    background-image: url(../img-sub/ma2.jpg);
+    background-color: rgba(0, 0, 0, 0.288);
+    background-blend-mode:multiply;
+}
+.sub-m-m ul a:nth-child(3) li{
+    background-image: url(../img-sub/ma3.jpg);
+    background-color: rgba(0, 0, 0, 0.288);
+    background-blend-mode:multiply;
+}
+.sub-m-m ul a:nth-child(4) li{
+    background-image: url(../img-sub/ma4.jpg);
+    background-color: rgba(0, 0, 0, 0.288);
+    background-blend-mode:multiply;
+}
+.sub-m-m ul a:nth-child(5) li{
+    background-image: url(../img-sub/ma5.jpg);
+    background-color: rgba(0, 0, 0, 0.288);
+    background-blend-mode:multiply;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =============================minuman */
+.sub-m-i{
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+.sub-m-i h1{
+    color: rgb(255, 255, 255);
+}
+.sub-m-i ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.sub-m-i ul a{
+    color: rgb(0, 174, 255);
+}
+.sub-m-i ul li {
+    width: 200px;
+    height: 150px;
+    margin: 3px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.sub-m-i ul li::before{
+    position: absolute;
+    display: none;
+    content: "Masukkan kekeranjang";
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255);
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, rgba(31, 29, 29, 0.411), rgba(0, 0, 255, 0.123));
+    transition: .60s;
+}
+
+.sub-m-i ul a:hover li::before{
+    display: block;
+}
+
+
+.sub-m-i ul a:hover li{
+    background-size: 102%;
+    background-color: rgba(255, 250, 250, 0.63);
+}
+
+.sub-m-i ul a:nth-child(1) li{
+    background-image: url(../img-sub/mi1.jpg);
+    background-color: rgba(0, 0, 0, 0.288);
+    background-blend-mode:multiply;
+}
+.sub-m-i ul a:nth-child(2) li{
+    background-image: url(../img-sub/mi2.jpg);
+    background-color: rgba(0, 0, 0, 0.288);
+    background-blend-mode:multiply;
+}
+.sub-m-i ul a:nth-child(3) li{
+    background-image: url(../img-sub/mi3.jpg);
+    background-color: rgba(0, 0, 0, 0.288);
+    background-blend-mode:multiply;
+}
+.sub-m-i ul a:nth-child(4) li{
+    background-image: url(../img-sub/mi4.jpg);
+    background-color: rgba(0, 0, 0, 0.288);
+    background-blend-mode:multiply;
+}
+.sub-m-i ul a:nth-child(5) li{
+    background-image: url(../img-sub/mi5.jpg);
+    background-color: rgba(0, 0, 0, 0.288);
+    background-blend-mode:multiply;
+}
+
+
+
+
+
+
+
+
+
+/* =======================================galery */
+.galerry{
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(to right, rgb(31, 29, 29), rgb(104, 104, 255));
+}
+
+
+
